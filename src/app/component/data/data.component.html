@@ -1,0 +1,19 @@
+<form>
+<div class="table-responsive">
+ <h1 align="center">Mobile Details</h1>
+<table border="2" align="center" class="table">
+  <tr>
+    <th (click)="sortid()">Mobile Id</th>
+    <th (click)="sortname()">Mobile Name</th>
+    <th (click)="sortprice()">Mobile Price</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let data of MobileData|sort:mobile" >
+    <td>{{data.mobId}}</td>
+    <td>{{data.mobName}}</td>
+    <td>{{data.mobPrice|currency}}</td>
+    <td><input type="submit" value="Delete" (click)="del(data)" class="button"></td>
+  </tr>
+</table>
+</div>
+</form>

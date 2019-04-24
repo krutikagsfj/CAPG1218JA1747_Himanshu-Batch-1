@@ -1,0 +1,21 @@
+.button
+{
+    background-color: darkgreen;
+    color: white;
+}
+th:hover
+{
+    cursor: pointer;
+    background-color: coral;
+}
+th{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: bisque;
+}
+td{
+    background-color: aquamarine;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
